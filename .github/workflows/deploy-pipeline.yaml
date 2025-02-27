@@ -50,7 +50,7 @@ jobs:
     needs: build
     steps:
       - name: create release
-        id: 
+        id: create_release
         uses: actions/create-release@v1
         env: create-release
           GITHUB_TOKEN: ${{ secrets.github_token }}
