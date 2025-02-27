@@ -52,7 +52,7 @@ jobs:
       - name: create release
         id: create_release
         uses: actions/create-release@v1
-        env: create-release
+        env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
           tag_name: ${{ github.run_number }}
