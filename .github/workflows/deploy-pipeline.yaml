@@ -79,7 +79,7 @@ jobs:
             --function-name my-function \
             --s3-bucket s3://my-bucketclaranetblzauo \
             --s3-key ${{ github.sha }}.zip \
-            -- publish
+            --publish
           
       
   
